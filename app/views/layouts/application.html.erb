@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		  <title>Omrails</title>
+		  <title>Welcome</title>
 		  <%= stylesheet_link_tag    "application", :media => "all" %>
 		  <%= javascript_include_tag "application" %>
 		  <%= csrf_meta_tags %>
 		</head>
 		<body>
-		<%= link_to "Home", root_path %>
-    	<%= link_to "About", about_path %>
 		<%= render 'layouts/header' %>
-
  	<div class="container">
     <%= yield %>
     <%= render 'layouts/footer' %>
